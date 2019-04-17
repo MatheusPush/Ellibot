@@ -7,10 +7,10 @@ import telebot
 from binance.client import Client
 
 PAR = 'BTCUSDT'
-BOT_API_TOKEN = '735807006:AAGAmR5LdeeAPV9atIeywTnDuahcquoHWY8'
-CHANNEL_ID = -1001382089659
-API_KEY = 'NfpRnbPhLduQ3ovPNccfJ6iS5rRSpu8ZlHUQIjkF6bX0hui4qIIlDo2qexOUviUs'
-API_SECRET = 'QHVsxnR7LOyB1AlZjPp3M2CQmmnNFfqvpMeO2TsfzRUymHNk5z6gxZ8WQEM2eaIE'
+BOT_API_TOKEN = ''
+CHANNEL_ID = 0
+API_KEY = ''
+API_SECRET = ''
 client = Client(API_KEY, API_SECRET)
 
 # bot = telebot.TeleBot(token=BOT_API_TOKEN)
