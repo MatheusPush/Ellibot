@@ -1,0 +1,14 @@
+__pycache__/
+datasets/
+datasets2/
+datasets3/
+imgs/
+
+ellibot.py
+build_network.py
+build_network2.py
+build_dataset.py
+ideas.txt
+sky.py
+test.py
+union.py

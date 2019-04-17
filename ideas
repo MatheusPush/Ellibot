@@ -1,0 +1,67 @@
+Pegar preços:
+    .   All time
+        .   5min
+        .   15min
+        .   30min
+        .   1h
+        .   2h
+        .   4h
+
+Gerar unico dataset, com:   5min, 15min
+                            5min, 15min, 1h
+                            5min, 15min, 30min, 1h, 4h
+
+Testar mês de setembro e outubro para ver qual timeframe é necessario para confirmação
+
+Deixar rolando no AWS.
+
+SMAs:   9   20  50  100 150 200
+EMAs:   9   12  26  72  158 190
+RSIs:   2   3   5   9   14  26
+
+C:\Users\Push\AppData\Local\Programs\Python\Python36\python3.exe C:/Users/Push/Desktop/3ader/GIT/Ellibot/build_network.py
+
+vars to be tested:
+
+    name        range                               qt
+
+    layers: 	128 a 1024	                        4
+
+    batch:		128 a 32768	                        9
+
+    optimizer:	'Adam'                              7   OK
+	            'Adamax'
+	            'SGD'
+	            'RMSprop'
+	            'Adadelta'
+	            'Adagrad'
+	            'Nadam'
+
+    activation:	'softmax'                           9   OK
+                'elu'
+                'selu'
+                'softplus'
+                'softsign'
+                'relu'
+                'tanh'
+                'sigmoid'
+                'hard_sigmoid'
+
+    loss f:     'sparse_categorical_crossentropy'   10  OK
+                'poisson'
+                'binary_crossentropy'
+                'mean_squared_logarithmic_error'
+                'categorical_crossentropy'
+                'kullback_leibler_divergence'
+                'mean_squared_error'
+                'mean_absolute_error'
+                'mean_absolute_percentage_error'
+                'cosine_proximity'
+
+    dropout:	0 a 0.9		                        10
+
+    callback?
+
+    houldout?
+
+    batch normalization?
